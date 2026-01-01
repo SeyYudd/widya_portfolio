@@ -4,7 +4,11 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
   output: 'export',
-
+  images: {
+    unoptimized: true,
+  },
+  basePath: process.env.NODE_ENV === 'production' ? '/widya_portfolio' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/widya_portfolio/' : '',
 };
 
 export default nextConfig;
