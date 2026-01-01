@@ -1,0 +1,21 @@
+/* Component-specific styles */
+
+/* Bento Card */
+.bento-card {
+  @apply bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-[var(--sage-green-light)];
+}
+
+/* Floating Icon */
+.floating-icon {
+  @apply w-12 h-12 rounded-full bg-gradient-to-br from-[var(--sage-green)] to-[var(--sage-green-dark)] flex items-center justify-center text-white shadow-lg hover:scale-110 transition-transform duration-300 cursor-pointer;
+}
+
+/* Badge Pill */
+.badge-pill {
+  @apply px-4 py-2 rounded-full text-sm font-medium bg-[var(--pastel-pink-light)] text-[var(--text-dark)] border border-[var(--pastel-pink)] inline-block;
+}
+
+/* Gradient Button */
+.gradient-button {
+  @apply px-8 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-[var(--sage-green)] via-[var(--pastel-pink)] to-[var(--sage-green-dark)] hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer;
+}
